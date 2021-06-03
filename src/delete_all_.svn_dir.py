@@ -77,7 +77,7 @@ def find_and_add_svn_dir_to_global_list(project_root: str) -> None:
         else:
             relative_root_list = root.split("/")
         root_name = relative_root_list[-1]
-        if root_name == ".svn" or root_name == "build":
+        if root_name == ".svn":
             global_svn_dir_list.append(root)
 
 
